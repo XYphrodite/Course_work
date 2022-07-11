@@ -1,0 +1,15 @@
+main()
+{  
+	int i;
+	double h,b,a,m,n,d,x;
+	scanf ("%le%le",&a,&b);
+	h=(b-a)/10;
+	for(i=0; i<=10;i++) 
+	{
+		x=a+h*i;
+		m=(2*h*h-4)/(2*h);
+		n=(2-h)/(2+h);
+		d=m*h*h-m*n;
+		printf ("\n%le,%le",x,d);
+	}
+}
